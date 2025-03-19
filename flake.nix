@@ -22,7 +22,7 @@
         default = firmware;
 
         firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
-          name = "firmware";
+          name = "corne-firmware";
 
           src = nixpkgs.lib.sourceFilesBySuffices self [
             ".board"
@@ -40,12 +40,12 @@
           ];
 
           board = "nice_nano_v2";
-          shield = "lily58_%PART%";
+          shield = "corne_%PART%";
 
           zephyrDepsHash = "sha256-k0BrCX7Pspj6/SSOgKSlDW1jZ3OWTFy5f8Kr+vQJ1LU=";
 
           meta = {
-            description = "ZMK firmware";
+            description = "ZMK firmware for corne keyboard";
             license = nixpkgs.lib.licenses.mit;
             platforms = nixpkgs.lib.platforms.all;
           };
