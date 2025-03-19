@@ -25,12 +25,11 @@ jobs:
       - run: nix -vL run --show-trace .#update
 
       - id: create-pr
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           branch: update_zmk_config_deps
           delete-branch: true
-          committer: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
-          author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
+          sign-commits: true
           commit-message: 'config,nix: update deps'
           title: 'config,nix: update deps'
           labels: 'dependencies'
