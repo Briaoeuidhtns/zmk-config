@@ -42,7 +42,7 @@
           board = "nice_nano_v2";
           shield = "corne_%PART%";
 
-          zephyrDepsHash = "sha256-k0BrCX7Pspj6/SSOgKSlDW1jZ3OWTFy5f8Kr+vQJ1LU=";
+          zephyrDepsHash = "sha256-6QBGU3p7UGm25LNGWKTN7FKbW5EcXif4VvekklCBptw=";
 
           meta = {
             description = "ZMK firmware for corne keyboard";
